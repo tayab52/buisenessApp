@@ -167,7 +167,14 @@ int main()
                 if (role == "admin" || role == "Admin")
                 {
                     int select = 1;
-
+                    for (int i = 0; i < count; i++)
+                    {
+                        if (customerRole[i] == "Customer" || customerRole[i] == "customer")
+                        {
+                            continue;
+                        }
+                        dealerCount++;
+                    }
                     while (select != 0)
                     {
                         select = adminInterface(adminName);
