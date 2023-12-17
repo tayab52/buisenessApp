@@ -901,6 +901,7 @@ void viewDealersDetail(string customerName[], string customerPassword[], string 
             cout << "\t\t\t" << customerName[i];
             gotoxy(x,y+line);
             cout<< customerPassword[i] << endl;
+            line++;
         }
     }
     getch();
